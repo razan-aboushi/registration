@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Registration Form</title>
+</head>
+<body>
+    
+
+
+    <div class="page-wrapper bg-gra-01 p-t-180 p-b-100 font-poppins">
+        <div class="wrapper wrapper--w780">
+            <div class="card card-3">
+                <div class="card-heading"></div>
+                <div class="card-body">
+                    <h2 class="title">Registration Form</h2>
+
+                    <form  name="registrationForm" id="myform" method="POST" onsubmit="return validateForm()">
+
+
+                        <div class="input-group">
+                      <input class="input--style-3" type="text" placeholder="Full name" name="username" required>
+                        </div>
+
+
+                        <div class="input-group">
+                            <input class="input--style-3" type="email" placeholder="E-mail" name="email" required>
+                        </div>
+
+                        
+                        <div class="input-group">
+                            <input class="input--style-3" type="text" placeholder="ex: 0780577727" name="phone" required>
+                        </div>
+
+
+                        <div class="input-group">
+                            <input class="input--style-3 js-datepicker" type="password" placeholder="password" name="password" required>
+                            <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
+                        </div>
+                      
+
+                    
+
+                        
+                        <div class="p-t-10">
+                            <button class="btn btn--pill btn--green" type="submit">Submit</button>
+                        </div>
+
+                        <div id="message"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
